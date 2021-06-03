@@ -13,16 +13,16 @@ def check_events(screen, ship, sprites, coin_sprites):
         if event.type == pygame.QUIT:
             sys.exit()
         elif event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_RIGHT:
+            if event.key == pygame.K_d:
                 # Move ship right.
                 ship.right()
-            elif event.key == pygame.K_LEFT:
+            elif event.key == pygame.K_a:
                 # Move ship left.
                 ship.left()
-            elif event.key == pygame.K_q:
+            elif event.key == pygame.K_w:
                 # Move ship up.
                 ship.up()
-            elif event.key == pygame.K_a:
+            elif event.key == pygame.K_s:
                 # Move ship down.
                 ship.down()
             if event.key == pygame.K_SPACE and ship.bitcoin_miner >= 100:
