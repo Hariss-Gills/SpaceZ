@@ -1,0 +1,33 @@
+Sources used in project:
+
+http://kidscancode.org/blog/2016/08/pygame_shmup_part_1/
+
+https://github.com/techwithtim/PygameForBeginners/blob/main/main.py
+
+https://www.youtube.com/watch?v=jO6qQDNa2UY
+
+https://www.programmersought.com/article/68131128566/
+
+Note: I was told that i could change how the files are organized of the project (discussion board post by Ludovico Chiavelli )
+      So i decided to go for the following format
+
+Directory of project:
+
+gills_52093275.zip/
+    media/
+        bitcoin.png
+        boom.wav
+        mars_background.png
+        roadster.png
+        starship.png
+    sprites/
+        __init__.py
+        aliens.py
+        bitcoin.py
+        ship.py
+    starter_code/
+        __init__.py
+        game_functions.py
+        settings.py
+        spaceZ.py
+    sources+directory.txt     
