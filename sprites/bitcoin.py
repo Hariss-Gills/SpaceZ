@@ -26,11 +26,12 @@ class Bitcoin(pygame.sprite.Sprite):
         if self.rect.x > ai_settings.screen_width:
             self.kill()
       
-class Supercoin(Bitcoin,pygame.sprite.Sprite): # Based on https://www.programmersought.com/article/68131128566/
-    """Supercoin sprite class as a subclass of Bitcoin"""
+class Dogecoin(Bitcoin,pygame.sprite.Sprite): # Based on https://www.programmersought.com/article/68131128566/
+    """coin sprite class as a subclass of Bitcoin"""
     def __init__(self, x, y, settings):
         pygame.sprite.Sprite.__init__(self)
         super().__init__(x, y, settings)
+        self.image = pygame.image.load(os.path.join('media', 'dogecoin-doge-logo.png'))
         self.reset_angle() # Set angle of movement
         self.velocity_y = 10 # Set velocity along vertical axis
 

@@ -25,7 +25,7 @@ def handle_coin_road_collison(hit_roadsters_with_coins, hit_coin_with_roadsters,
         if type(coin) == sprites.bitcoin.Bitcoin:
             coin.kill() #if bitcoin hits, destroy itself
         else:
-            coin.reset_angle() #if supercoin hits, reset angle
+            coin.reset_angle() #if Dogecoin hits, reset angle
     for roadster in hit_roadsters_with_coins:
         ai_settings.boom_sound.play() # play boom for each hit roadster
         ai_settings.score += 10 # increase by 10 for each roadster

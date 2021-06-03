@@ -1,5 +1,5 @@
 import pygame, os, sys, random # imports
-from sprites.bitcoin import Bitcoin, Supercoin # import Supercoins and Bitcoins
+from sprites.bitcoin import Bitcoin, Dogecoin # import Dogecoins and Bitcoins
 
 BLACK = (0, 0, 0) # RGB black
 
@@ -28,7 +28,7 @@ class Starship(pygame.sprite.Sprite):
         self.bitcoin_miner = 0 # reset miner
         choice = random.choice([0, 1]) # 50% generation of type of coin
         if choice == 0:
-            coin = Supercoin(self.rect.right, self.rect.bottom - 10, ai_settings)
+            coin = Dogecoin(self.rect.right, self.rect.bottom - 10, ai_settings)
         else:
             coin = Bitcoin(self.rect.right, self.rect.bottom - 10, ai_settings)
         
